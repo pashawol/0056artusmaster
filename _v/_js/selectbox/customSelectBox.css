@@ -1,0 +1,125 @@
+.customSelect { 
+	position: relative;			
+	font-size: 14px;
+	float: left;
+	margin-right: 10px;
+	width:70px !important;
+	cursor:pointer;
+	z-index:99 !important;
+	word-wrap: break-word;
+}	
+.customSelect.select-open .selectedValue {
+	  border:1px solid #bdbdbd;
+	  width:70px;
+	  padding:0px 10px;
+	  border-radius:3px 3px 0px 0px;
+}
+.customSelect .selectedValue {
+	  border:1px solid #d9d9d9;
+	  width:70px;
+	  height:25px;
+	  line-height:22px;
+	  border-radius:3px;
+	  padding:0px 10px;
+	  background:#fff;
+	  border-radius:3px;
+
+}
+.customSelect .selectList {
+	z-index: 100;
+	position: absolute;
+	left: -999em;
+	top: -999em;	
+  	list-style: none;
+    border:1px solid #bdbdbd;
+	width:70px;
+	margin-top:-1px;
+ 
+}
+.customSelect.select-open .selectList {
+	left: 0 !important;
+	top: auto !important;
+}
+.customSelect .selectList dl {
+	background: #fff;
+	width:68px !important;	
+}
+.customSelect .selectList dl.defaultScrollbar {
+	overflow-x: hidden;
+	overflow-y: scroll;	
+}
+.customSelect dl, .customSelect dd {
+	margin: 0;
+}
+.customSelect dd {
+	zoom: 1;
+	cursor: pointer;
+}
+.customSelect .disabled {
+	color: #999;
+	cursor: default;
+}
+.customSelect .selected {
+	color: #333;
+	text-decoration: none;
+	background-color: #ebf1f5;
+}
+.customSelect .selectList dd.hovered {
+	background: #ebf1f5;
+	color: #333;
+}
+.customSelect .selectList dd.disabled.hovered {
+	background: none;
+	color: #999;
+}
+.customSelect dt {
+	font-weight: bold;
+	font-style: italic;
+	padding: 8px 10px 8px 6px;
+}	
+.customSelect dd {
+	padding: 8px 10px 8px 10px;
+} 
+select.js_icons_select {
+	position: absolute;
+	left: -999em;
+}
+select.js_icons_select.use-default {
+	position: absolute;
+	left: auto;
+	height: auto;
+	width: 100%;
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	opacity: 0;
+	/* prevents iOS from zooming in on field */
+	font-size: 16px;
+}
+.customSelect.focused .selectedValue {
+	
+}
+.customSelect.disabled .selectedValue {
+	border: 1px solid #ccc;
+	color: #ccc;
+	cursor: default;
+}
+.customSelect.select-open .caret{
+	background-image:url(../../_i/icons/icon_color_select_opened.png);
+	background-repeat:no-repeat;
+}
+.customSelect .caret {
+	display: inline-block;
+	width: 13px;
+	height: 7px;
+	vertical-align: top;
+	background-image:url(../../_i/icons/icon_color_select.png);
+	background-repeat:no-repeat;
+	content: "";
+}
+.customSelect .selectValueWrap .caret {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}

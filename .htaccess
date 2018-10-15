@@ -1,0 +1,4 @@
+# Add system administrator from "Artus"
+# Default Charset UTF-8
+Options -Indexes
+# AddDefaultCharset windows-1251
