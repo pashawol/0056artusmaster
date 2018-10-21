@@ -600,13 +600,14 @@ LK_top_manager_name a:hover {
 }
 
 .LK_menu_block {
-    height: 60px;
+    min-height: 60px;
     background: #fbf6f1;
     margin-bottom: 35px;
 }
 
 .LK_menu {
     padding-top: 14px;
+    padding-bottom: 12px;
 }
 
 .LK_menu a {
@@ -9884,6 +9885,32 @@ input[type=submit].btn_confirm_order:hover {
     color: #000;
 }
 
+@media (max-width: 1240px) {
+    .order_total_info_block .block_left {
+        width: 100%;
+        max-width: 580px;
+    }
+    .order_total_info_block .block_right {
+        width: auto;
+    }
+}
+
+@media (max-width: 950px) {
+    .order_total_info_block .block_left {
+        display: block;
+        float: none;
+    }
+    .order_total_info_block .block_right {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+    .order_total_info_block .btn_commercial {
+        padding-left: 22px;
+        background-position: 2px 3px;
+    }
+}
+
 /*end order_total_info_block*/
 
 /*pickup_order_block*/
@@ -10864,6 +10891,12 @@ input[type=submit].btn_confirm_order:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 1240px) {
+    .cart_headings_holder {
+        display: none;
+    }
+}
+
 /*subscribe_block*/
 .subscribe_block {
     background: #fff;
@@ -11070,7 +11103,8 @@ input[type=submit].btn_confirm_order:hover {
     /* border:1px solid #e2e2e2; */
     padding: 15px 10px 20px 30px;
     background: #fff;
-    width: 570px;
+    width: 100%;
+    max-width: 570px;
     vertical-align: top;
     position: relative;
     min-height: 280px;
@@ -11117,6 +11151,19 @@ input[type=submit].btn_confirm_order:hover {
     vertical-align: top;
     max-width: 400px;
     margin-top: 5px;
+}
+
+@media (max-width: 1240px) {
+    .lk_blocks_holder {
+        margin-left: 0;
+    }
+    .lk_blocks_holder .block,
+    .lk_blocks_holder .block + div {
+        display: block;
+        max-width: 570px;
+        margin: 0 auto;
+        padding: 15px 10px;
+    }
 }
 
 .profile_info_block {
@@ -11620,6 +11667,27 @@ input[type=submit].profile_btn_save {
 
 .block_manager_message input[type=submit]:active {
     background-color: #ff9546;
+}
+@media (max-width: 1150px) {
+    .block_manager_profile,
+    .block_manager_message {
+        display: block;
+        float: none;
+        width: 100%;
+        max-width: 570px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+    .manager_info_block {
+        width: 100%;
+        max-width: none;
+    }
+    .block_manager_message textarea {
+        max-width: none;
+    }
+    .row_profile_manager_block .row_right .inner {
+        width: auto;
+    }
 }
 
 /*end lk manager block*/
@@ -15488,7 +15556,19 @@ input[type=submit].btn_login_submit:active {
     margin-right: 45px;
     padding-top: 6px;
     padding-bottom: 6px;
-    height: 30px;
+    min-height: 30px;
+}
+
+@media (max-width: 1240px) {
+    .LK_top_left_block {
+        display: inline-block;
+        width: auto;
+        float: none;
+        margin-right: 0;
+    }
+    .LK_top_left_block > * {
+        margin-bottom: 6px;
+    }
 }
 
 /*recently_viewed_block*/
@@ -15955,6 +16035,19 @@ btn_clean_range_slider:hover {
 .choose_products_block_filter .block_right {
     float: right;
     width: 580px;
+}
+
+@media (max-width: 1240px) {
+    .choose_products_block_filter .revealing_list_2 {
+        max-width: 580px;
+        margin: 0 auto;
+    }
+    .choose_products_block_filter .block_left,
+    .choose_products_block_filter .block_right {
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
 }
 
 /*recently_viewed_block*/
