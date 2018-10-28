@@ -1,187 +1,243 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Мешочный мир - прототипы верстки шаблонов страниц</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Мешочный мир - прототипы верстки шаблонов страниц</title>
 
 
-<style>
-body{background-color:#f8f7f0;font-family:arial;color:#333;cursor:default;}
-#wrap{width:95%;margin:0 auto;}
-#list{background-color:white;margin-bottom:10px;padding:30px;overflow: hidden;
--webkit-box-shadow: 0px 1px 5px 1px #ddd;
--moz-box-shadow: 0px 1px 5px 1px #ddd;
-box-shadow: 0px 1px 5px 1px #ddd;}
-h1{font-size:1.5em;}
-a{color:#000000;}
+  <style>
+    body {
+      background-color: #f8f7f0;
+      font-family: arial;
+      color: #333;
+      cursor: default;
+    }
 
-a:hover {color:#000000;text-decoration: none;}
+    #wrap {
+      width: 95%;
+      margin: 0 auto;
+    }
 
+    #list {
+      background-color: white;
+      margin-bottom: 10px;
+      padding: 30px;
+      overflow: hidden;
+      -webkit-box-shadow: 0px 1px 5px 1px #ddd;
+      -moz-box-shadow: 0px 1px 5px 1px #ddd;
+      box-shadow: 0px 1px 5px 1px #ddd;
+    }
 
+    h1 {
+      font-size: 1.5em;
+    }
 
-.sitemap_item {
-	float: left;width: 33.33%;padding-left: 30px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-}
-.sitemap_list li p{
-	margin-top:0px;
-	color:#6a543a;
-}
+    a {
+      color: #000000;
+    }
 
-ol { counter-reset: item; padding-left:0px; }
-ol li { 
-	display: block; 
-	overflow:hidden;
-	text-indent:-10px;
-	padding-left:30px;
-	list-style-position: inside;
-	margin-bottom:5px;
-	line-height:normal;
-	font-weight:bold;
-	color:#838383;
-}	
-ol li ol li {
-	margin-bottom:2px;
-	text-indent:-16px;
-	padding-left:33px;
-	margin-left:8px;
-	font-weight:normal;	
-}
-ol li ol li ol li {
-	margin-bottom:2px;
-	text-indent:-16px;
-	padding-left:33px;
-	margin-left:8px;
-	font-weight:normal;	
-}
-ol li ol{
-	margin-top:5px;margin-bottom:20px;
-}
-ol li ol li ol{
-	margin-top:5px;margin-bottom:0px;
-}
-ol li:before { content: counters(item, ".") " "; counter-increment: item ; color:#8a8a8a; font-weight:bold; min-width:20px;  display:inline-block;}
+    a:hover {
+      color: #000000;
+      text-decoration: none;
+    }
 
-ol li ol li:before { content: counters(item, ".") " "; counter-increment: item ; color:#8a8a8a; font-weight:bold; min-width:25px;  display:inline-block;}
-ol li ol li ol li:before { content: counters(item, ".") " "; counter-increment: item ; color:#8a8a8a; font-weight:bold; min-width:26px;  display:inline-block;}
-</style>
+    .sitemap_item {
+      float: left;
+      width: 33.33%;
+      padding-left: 30px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+
+    .sitemap_list li p {
+      margin-top: 0px;
+      color: #6a543a;
+    }
+
+    ol {
+      counter-reset: item;
+      padding-left: 0px;
+    }
+
+    ol li {
+      display: block;
+      overflow: hidden;
+      text-indent: -10px;
+      padding-left: 30px;
+      list-style-position: inside;
+      margin-bottom: 5px;
+      line-height: normal;
+      font-weight: bold;
+      color: #838383;
+    }
+
+    ol li ol li {
+      margin-bottom: 2px;
+      text-indent: -16px;
+      padding-left: 33px;
+      margin-left: 8px;
+      font-weight: normal;
+    }
+
+    ol li ol li ol li {
+      margin-bottom: 2px;
+      text-indent: -16px;
+      padding-left: 33px;
+      margin-left: 8px;
+      font-weight: normal;
+    }
+
+    ol li ol {
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+
+    ol li ol li ol {
+      margin-top: 5px;
+      margin-bottom: 0px;
+    }
+
+    ol li:before {
+      content: counters(item, ".") " ";
+      counter-increment: item;
+      color: #8a8a8a;
+      font-weight: bold;
+      min-width: 20px;
+      display: inline-block;
+    }
+
+    ol li ol li:before {
+      content: counters(item, ".") " ";
+      counter-increment: item;
+      color: #8a8a8a;
+      font-weight: bold;
+      min-width: 25px;
+      display: inline-block;
+    }
+
+    ol li ol li ol li:before {
+      content: counters(item, ".") " ";
+      counter-increment: item;
+      color: #8a8a8a;
+      font-weight: bold;
+      min-width: 26px;
+      display: inline-block;
+    }
+  </style>
 </head>
 <body>
 <div id="wrap">
-  <div align="center"> 
+  <div style="text-align: center">
     <h1>Мешочный мир</h1>
   </div>
   <div id="list">
-      <ul>
-      	<li><a href="library.html" target="_blank">Библиотека элементов</a></li>
-        
-       </ul>
-        <ol>
-        	<li><a href="main.html" target="_blank">Главная страница</a></li>
-            <li><a href="catalog.html" target="_blank">Каталог продукции</a>
-            	<ol>
-                        	<li><a href="item_catalog.html" target="_blank">Раздел каталога 2го уровня – плитка, список</a></li>
-                            <li><a href="item_catalog2.html" target="_blank">Раздел каталога 3го уровня – плитка, список</a></li>
-                            	<ol>
-                                	<li><a href="item_card.html" target="_blank">Страница товара</a></li>
-                                </ol>
-                            </li>
-                        
-                </ol>
-            </li>
-            
-            
-            <li>Услуги и сервис
-            	<ol>
-                	<!--<li><a href="inform_inner.html" target="_blank">Дизайн упаковки (37)</a></li>-->
-                    <li><a href="compare.html" target="_blank">Сравнение товаров (12)</a></li>
-                    <li><a href="favorite_items.html" target="_blank">Избранные товары (13)</a></li>
-                    <li><a href="choose_products.html" target="_blank">Подборщик продукции по параметрам(15)</a></li>
-                    <li><a href="choose_products_inner.html" target="_blank">Подборщик продукции по параметрам(16)</a></li>
-                </ol>
-            </li>
-        
-            
-            <!--<li><a href="clients.html" target="_blank">Клиентам (36)</a>
-            	<ol>
-                	<li><a href="comments.html" target="_blank">Отзывы клиентов (35)</a></li>
-                   <li><a href="poll.html" target="_blank">Опросы (34)</a></li>
-                    <li><a href="photo.html" target="_blank">Фотогалерея (32)</a>
-                    	<ol>
-                        	<li><a href="photo_inner.html" target="_blank">Фотоальбом (33)</a></li>
-                        </ol>
-                    </li>
-                    <li><a href="video.html" target="_blank">Видео (30-31)</a></li>
-                </ol>
-            </li>-->
-            
-            
-            <!--<li><a href="news.html" target="_blank">Новости и статьи (28)</a>
-            	<ol>
-                	<li><a href="news_inner.html" target="_blank">Новость детальная (29)</a></li>
-                </ol>
-            </li>-->
-            
-            
-           <!--<li><a href="contacts.html" target="_blank">Контакты</a></li>-->
-            <li><a href="LK_page.html" target="_blank">Личный кабинет – главная (22)</a>
-            	<ol>
-                	<li><a href="LK_manager.html" target="_blank">Ваш менеджер (23)</a></li>
-                    <li><a href="LK_cart.html" target="_blank">Ваша корзина (24)</a></li>
-                    <li><a href="LK_order_history.html" target="_blank">История заказов (25)</a></li>
-                    <!--<li><a href="LK_wishlist.html" target="_blank">Избранные товары (26)</a></li>-->
-                    <li><a href="LK_compare.html" target="_blank">Сравнение товаров (27)</a></li>
-                </ol>
-            </li>
+    <ul>
+      <li><a href="library.html" target="_blank">Библиотека элементов</a></li>
 
-            <li><a href="News_Articles.html" target="_blank">Новости и статьи (28)</a>
-                <ol>
-                    <li><a href="news_inner.html" target="_blank">Новость детальная (29)</a></li>
-                </ol>
-            </li>
-            <li><a href="clients.html" target="_blank">Клиентам (36)</a>
-                <ol>
-                    <li><a href="video.html" target="_blank">Видео (30-31)</a></li>
-                    <li><a href="photo.html" target="_blank">Фотогалерея (32)</a>
-                        <ol>
-                            <li><a href="photo_inner.html" target="_blank">Фотоальбом (33)</a></li>
-                        </ol>
-                    </li>
-                    <li><a href="poll.html">Опросы (34)</a></li>
-                    <li><a href="comments.html" target="_blank">Отзывы клиентов (35)</a></li>
-                    <li><a href="inform_inner.html" target="_blank">Дизайн упаковки (37)</a></li>
-                </ol>
-            </li>
-        
-            
-            
-            <h1>Сервисные и служебные страницы</h1>
-          	
-            <li><a href="search.html" target="_blank">Поиск (14)</a></li>
-            <!--<li><a href="sitemap.html" target="_blank">Карта сайта</a></li>-->
-            
-            <!--<li><a href="404.html" target="_blank">404 страница</a></li>-->
-            <li><a href="register.html" target="_blank">Регистрация (20-21)</a></li>
-            <li><a href="cart.html" target="_blank">Корзина (17)</a></li>
-            <li><a href="order.html" target="_blank">Оформление заказа (18)</a></li>
-            <li><a href="LK_order.html" target="_blank">Оформление заказа LK (18-1)</a></li>
-            <li><a href="order_done.html" target="_blank">Подтверждение заказа (19)</a></li>
-        
-            </ol>
-            
-            <!--<h1>Documents</h1>
+    </ul>
+    <ol>
+      <li><a href="main.html" target="_blank">Главная страница</a></li>
+      <li><a href="catalog.html" target="_blank">Каталог продукции</a>
+        <ol>
+          <li><a href="item_catalog.html" target="_blank">Раздел каталога 2го уровня – плитка, список</a></li>
+          <li><a href="item_catalog2.html" target="_blank">Раздел каталога 3го уровня – плитка, список</a>
             <ol>
-            <li><a href="agreement.html" target="_blank">Договор поставки</a></li>
-            <li><a href="payment.html" target="_blank">счет</a></li>
-            </ol>-->
-        
- 
+              <li><a href="item_card.html" target="_blank">Страница товара</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+
+
+      <li>Услуги и сервис
+        <ol>
+          <!--<li><a href="inform_inner.html" target="_blank">Дизайн упаковки (37)</a></li>-->
+          <li><a href="compare.html" target="_blank">Сравнение товаров (12)</a></li>
+          <li><a href="favorite_items.html" target="_blank">Избранные товары (13)</a></li>
+          <li><a href="choose_products.html" target="_blank">Подборщик продукции по параметрам(15)</a></li>
+          <li><a href="choose_products_inner.html" target="_blank">Подборщик продукции по параметрам(16)</a></li>
+        </ol>
+      </li>
+
+
+      <!--<li><a href="clients.html" target="_blank">Клиентам (36)</a>
+        <ol>
+            <li><a href="comments.html" target="_blank">Отзывы клиентов (35)</a></li>
+             <li><a href="poll.html" target="_blank">Опросы (34)</a></li>
+              <li><a href="photo.html" target="_blank">Фотогалерея (32)</a>
+                <ol>
+                    <li><a href="photo_inner.html" target="_blank">Фотоальбом (33)</a></li>
+                  </ol>
+              </li>
+              <li><a href="video.html" target="_blank">Видео (30-31)</a></li>
+          </ol>
+      </li>-->
+
+
+      <!--<li><a href="news.html" target="_blank">Новости и статьи (28)</a>
+        <ol>
+            <li><a href="news_inner.html" target="_blank">Новость детальная (29)</a></li>
+          </ol>
+      </li>-->
+
+
+      <!--<li><a href="contacts.html" target="_blank">Контакты</a></li>-->
+      <li><a href="LK_page.html" target="_blank">Личный кабинет – главная (22)</a>
+        <ol>
+          <li><a href="LK_manager.html" target="_blank">Ваш менеджер (23)</a></li>
+          <li><a href="LK_cart.html" target="_blank">Ваша корзина (24)</a></li>
+          <li><a href="LK_order_history.html" target="_blank">История заказов (25)</a></li>
+          <!--<li><a href="LK_wishlist.html" target="_blank">Избранные товары (26)</a></li>-->
+          <li><a href="LK_compare.html" target="_blank">Сравнение товаров (27)</a></li>
+        </ol>
+      </li>
+
+      <li><a href="News_Articles.html" target="_blank">Новости и статьи (28)</a>
+        <ol>
+          <li><a href="news_inner.html" target="_blank">Новость детальная (29)</a></li>
+        </ol>
+      </li>
+      <li><a href="clients.html" target="_blank">Клиентам (36)</a>
+        <ol>
+          <li><a href="video.html" target="_blank">Видео (30-31)</a></li>
+          <li><a href="photo.html" target="_blank">Фотогалерея (32)</a>
+            <ol>
+              <li><a href="photo_inner.html" target="_blank">Фотоальбом (33)</a></li>
+            </ol>
+          </li>
+          <li><a href="poll.html">Опросы (34)</a></li>
+          <li><a href="comments.html" target="_blank">Отзывы клиентов (35)</a></li>
+          <li><a href="inform_inner.html" target="_blank">Дизайн упаковки (37)</a></li>
+        </ol>
+      </li>
+
+
+      <h1>Сервисные и служебные страницы</h1>
+
+      <li><a href="search.html" target="_blank">Поиск (14)</a></li>
+      <!--<li><a href="sitemap.html" target="_blank">Карта сайта</a></li>-->
+
+      <!--<li><a href="404.html" target="_blank">404 страница</a></li>-->
+      <li><a href="register.html" target="_blank">Регистрация (20-21)</a></li>
+      <li><a href="cart.html" target="_blank">Корзина (17)</a></li>
+      <li><a href="order.html" target="_blank">Оформление заказа (18)</a></li>
+      <li><a href="LK_order.html" target="_blank">Оформление заказа LK (18-1)</a></li>
+      <li><a href="order_done.html" target="_blank">Подтверждение заказа (19)</a></li>
+
+    </ol>
+
+    <!--<h1>Documents</h1>
+    <ol>
+    <li><a href="agreement.html" target="_blank">Договор поставки</a></li>
+    <li><a href="payment.html" target="_blank">счет</a></li>
+    </ol>-->
+
 
   </div>
-    
+
 </div>
 
 
-</body></html>
+</body>
+</html>
