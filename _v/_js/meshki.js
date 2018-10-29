@@ -821,9 +821,11 @@ function initTabs() {
               selectSearch: false
             });
 
-
+            var slides = '3';
+            if ($(window).width() <= 680) slides = '2';
+            if ($(window).width() <= 480) slides = '1';
             var similar_items_slider = new Swiper('.js_similar_items_slider .swiper-container', {
-              slidesPerView: '3',
+              slidesPerView: slides,
               spaceBetween: 70,
               loop: false,
               nextButton: '.js_similar_items_slider .js_swiper_next',
@@ -1529,7 +1531,7 @@ $(document).ready(function () {
   /*registration page radio buttons switch*/
 
   $('.js_item_block .block_show').mouseover(function () {
-    if ($(window).width() > 920) {
+    if ($(window).width() > 1240) {
       $(this).parent().find('.block_hide').css('display', 'inline-block');
       $(this).parent().css('width', '581px');
       $(this).closest('.js_item_block').addClass('hover');
@@ -2518,8 +2520,11 @@ $(document).ready(function () {
 
   /*end show recently view items*/
 
+  var slides = '3';
+  if ($(window).width() <= 680) slides = '2';
+  if ($(window).width() <= 480) slides = '1';
   var related_items_slider = new Swiper('.related_items_block .swiper-container', {
-    slidesPerView: '3',
+    slidesPerView: slides,
     spaceBetween: 70,
     loop: false,
     nextButton: '.related_items_block .js_swiper_next',
