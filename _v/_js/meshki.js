@@ -1831,22 +1831,22 @@ $(document).ready(function () {
     e.stopPropagation();
 
     var href = $(this).attr('href');
-    if (navigator.userAgent.match(/Android/i) ||
-      navigator.userAgent.match(/webOS/i) ||
-      navigator.userAgent.match(/iPhone/i) ||
-      navigator.userAgent.match(/iPod/i) ||
-      navigator.userAgent.match(/iPad/i) ||
-      navigator.userAgent.match(/Blackberry/i)) {
-      location.href = href;
-    }
-
-    else {
+    // if (navigator.userAgent.match(/Android/i) ||
+    //   navigator.userAgent.match(/webOS/i) ||
+    //   navigator.userAgent.match(/iPhone/i) ||
+    //   navigator.userAgent.match(/iPod/i) ||
+    //   navigator.userAgent.match(/iPad/i) ||
+    //   navigator.userAgent.match(/Blackberry/i)) {
+    //   location.href = href;
+    // }
+    //
+    // else {
       $(this).parent().find('.catalog_hidden_block, .js_catalog_hidden_block').fadeToggle();
       $(this).toggleClass('active');
       $('.js_scroll_pane').jScrollPane({
         showArrows: true
       });
-    }
+    // }
 
   })
   $('.catalog_hidden_block').click(function (e) {
@@ -2985,10 +2985,12 @@ function openMenu() {
   $('.toggle-mnu').addClass('on');
   $('.main_menu_block').addClass('visible');
   $('.main_page_top_menu_block').addClass('visible');
+  $('.LK_top_left_block').addClass('full');
 }
 
 function closeMenu() {
   $('.toggle-mnu').removeClass('on');
   $('.main_menu_block').removeClass('visible');
   $('.main_page_top_menu_block').removeClass('visible');
+  $('.LK_top_left_block').removeClass('full');
 }
