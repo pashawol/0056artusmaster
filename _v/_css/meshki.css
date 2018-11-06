@@ -825,12 +825,12 @@ LK_top_manager_name a:hover {
 
 .personal_cabinet_block .text {
   padding-left: 27px;
-  max-width: 183px;
+  width: 183px;
   position: relative;
   overflow: hidden;
   white-space: nowrap;
-  color: #000000;
-  position: relative;
+  color: black;
+  text-overflow: ellipsis;
 }
 
 .personal_cabinet_block.logined:before {
@@ -1009,14 +1009,15 @@ LK_top_manager_name a:hover {
 .catalog_hidden_block {
   background: #fff;
   border: 2px solid #ffa766;
-  width: 1170px;
+  margin-top: 10px;
+  width: calc(100vw - 16px);
+  max-width: 1100px;
   position: absolute;
-  top: 41px;
+  top: 40px;
   left: 0;
   padding: 0 10px 0 10px !important;
   display: none;
-  z-index: 200;
-  margin-top: 10px;
+  z-index: 210;
   border-top: 0;
 }
 
@@ -1126,8 +1127,8 @@ LK_top_manager_name a:hover {
   width: 27px;
   height: 27px;
   position: absolute;
-  right: 18px;
-  top: 28px;
+  right: 4px;
+  top: 4px;
 }
 
 .btn_close_catalog:hover {
@@ -12839,10 +12840,7 @@ input[type=submit].profile_btn_save {
 
 .poll_block .question_title_block {
   margin-bottom: 20px;
-}
-
-.poll_block .question_title_block {
-  margin-bottom: 20px;
+  display: flex;
 }
 
 .poll_block .question_title_block .question_number {
@@ -12857,6 +12855,7 @@ input[type=submit].profile_btn_save {
   font-size: 11px;
   color: #4f4f4f;
   vertical-align: top;
+  flex: none;
 }
 
 .poll_block .question_title_block .question_text {
@@ -13267,10 +13266,14 @@ input[type=submit].profile_btn_save {
   max-width: 980px;
   vertical-align: middle;
   display: block;
-  background: #fff;
+  background-color: #666;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 #photo_slider img {
+  height: 100%;
   max-height: 620px;
   width: auto;
   display: block;
@@ -16206,28 +16209,6 @@ input[type=submit].btn_login_submit:active {
   .personal_cabinet_block.logined {
     margin-left: 20px;
   }
-  .LK_top_left_block.full {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ffe1c4;
-    z-index: 1000;
-    padding-top: 32px;
-    max-width: none;
-    height: auto;
-  }
-  .LK_top_left_block.full .city_block {
-    display: none;
-  }
-  .LK_top_left_block.full .LK_top_manager_phone,
-  .LK_top_left_block.full .LK_top_manager_name {
-    display: block;
-    float: none;
-    margin: 0 auto 16px;
-    max-width: 280px;
-  }
 }
 
 /*recently_viewed_block*/
@@ -18428,7 +18409,7 @@ related_products_block .btn_recently_view {
   left: 0;
   padding: 0 10px 0 10px !important;
   display: none;
-  z-index: 200;
+  z-index: 210;
   border-top: 0;
 }
 
@@ -18538,31 +18519,41 @@ related_products_block .btn_recently_view {
   width: 27px;
   height: 27px;
   position: absolute;
-  right: 5px;
-  top: 28px;
+  right: 4px;
+  top: 4px;
 }
 
 .main_page_btn_close_catalog:hover {
   background-image: url(../_i/icons/btn_close_catalog_hover.png);
 }
 
+@media (max-width: 1100px) {
+  .main_page_catalog_hidden_block,
+  .catalog_hidden_block {
+    max-width: 90vw;
+  }
+}
+
 @media (max-width: 760px) {
   .main_page_catalog_hidden_block .main_page_catalog_col,
-  .main_page_catalog_hidden_block .catalog_col {
+  .main_page_catalog_hidden_block .catalog_col,
+  .catalog_hidden_block .catalog_col {
     display: inline-block;
     width: 100%;
     max-width: 280px;
     text-align: left;
   }
 
-  .main_page_catalog_hidden_block .catalog_col {
+  .main_page_catalog_hidden_block .catalog_col,
+  .catalog_hidden_block .catalog_col {
     border-right: 1px solid transparent;
   }
 }
 
 @media (max-width: 610px) {
   .main_page_catalog_hidden_block .main_page_catalog_col,
-  .main_page_catalog_hidden_block .catalog_col {
+  .main_page_catalog_hidden_block .catalog_col,
+  .catalog_hidden_block .catalog_col {
     border-right: 1px solid transparent;
     max-width: 300px;
   }
@@ -19904,6 +19895,36 @@ h1.new_pd {
   font-size: 14px;
   font-weight: normal;
   margin-bottom: 4px;
+}
+
+.mobile_menu_block {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffe1c4;
+  z-index: 1000;
+  padding-top: 32px;
+  max-width: none;
+  height: auto;
+}
+
+.mobile_menu_block.visible{
+  display: block;
+}
+
+.mobile_menu_block a {
+  color: black;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  line-height: 37px;
+  text-decoration: none;
+  vertical-align: top;
 }
 
 @media (max-width: 1260px) {
