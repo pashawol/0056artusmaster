@@ -2967,11 +2967,16 @@ $(document).ready(function () {
     var card_id = $(this).attr('data-card-id');
     var parent = $(this).closest('.catalog_block_row');
     $('.js_catalog_block_card').not(this).removeClass('active');
-    $(this).addClass('active');
-
     var block = parent.find('.js_catalog_block_content_block[data-content-id=' + card_id + ']');
     $('.js_catalog_block_content_block').not(block).hide();
-    block.show();
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $(block).hide();
+    } else {
+      $(this).addClass('active');
+      block.css('display', 'flex');
+      $('.catalog_block_content_holder').css('top', $(this).position().top + $(this).height() + 20 + 'px');
+    }
 
   })
 
