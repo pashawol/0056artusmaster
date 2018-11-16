@@ -795,7 +795,7 @@ LK_top_manager_name a:hover {
   background-image: url(../_i/icons/icon_personal_cabinet.png);
   background-repeat: no-repeat;
   background-position: 10px 7px;
-  width: 200px;
+  width: 170px;
   color: #000000;
   float: right;
   display: block;
@@ -825,7 +825,7 @@ LK_top_manager_name a:hover {
 
 .personal_cabinet_block .text {
   padding-left: 27px;
-  width: 183px;
+  width: 145px;
   position: relative;
   overflow: hidden;
   white-space: nowrap;
@@ -854,7 +854,7 @@ LK_top_manager_name a:hover {
 .personal_cabinet_block.logined:after {
   background-image: url(../_i/lk_name_cover.png);
   background-repeat: no-repeat;
-  content: "";
+  /*content: "";*/
   display: block;
   position: absolute;
   right: 0;
@@ -866,7 +866,7 @@ LK_top_manager_name a:hover {
 .personal_cabinet_block.logined.opened:after {
   background-image: url(../_i/lk_name_cover_opened.png);
   background-repeat: no-repeat;
-  content: "";
+  /*content: "";*/
   display: block;
   position: absolute;
   right: 0;
@@ -880,7 +880,7 @@ LK_top_manager_name a:hover {
   display: none;
   position: absolute;
   background-color: #ffcb98;
-  width: 200px;
+  width: 170px;
   z-index: 100;
   top: 28px;
   right: 0;
@@ -16207,7 +16207,7 @@ input[type=submit].btn_login_submit:active {
     display: none;
   }
   .personal_cabinet_block.logined {
-    margin-left: 20px;
+    margin-left: 0;
   }
 }
 
@@ -19925,6 +19925,10 @@ h1.new_pd {
   line-height: 37px;
   text-decoration: none;
   vertical-align: top;
+}
+
+.top_block .inner_wrapper {
+  padding: 0 8px;
 }
 
 @media (max-width: 1260px) {
