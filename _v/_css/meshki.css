@@ -20025,10 +20025,6 @@ div.jspVerticalBar {
   right: 16px;
 }
 
-.top_block .inner_wrapper {
-  padding: 0 8px;
-}
-
 @media (max-width: 1260px) {
   .header_top_block_holder {
     min-height: 131px;
