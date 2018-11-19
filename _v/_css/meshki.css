@@ -20283,6 +20283,7 @@ div.jspVerticalBar {
 
   .find_block input[type="text"] {
     width: 100%;
+    max-width: none;
   }
 }
 
