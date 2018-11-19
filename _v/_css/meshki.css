@@ -434,7 +434,7 @@ hr.sitemap_hr {
   min-height: 100%;
   position: relative;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .content_block {
@@ -530,6 +530,19 @@ hr.sitemap_hr {
 .header_and_content_holder {
   margin: 0 auto;
   width: 100%;
+  min-height: calc(100vh - 346px);
+}
+
+@media (max-width: 1240px) {
+  .header_and_content_holder {
+    min-height: calc(100vh - 648px);
+  }
+}
+
+@media (max-width: 650px) {
+  .header_and_content_holder {
+    min-height: calc(100vh - 1204px);
+  }
 }
 
 div {
@@ -801,7 +814,7 @@ LK_top_manager_name a:hover {
   background-image: url(../_i/icons/icon_personal_cabinet.png);
   background-repeat: no-repeat;
   background-position: 10px 7px;
-  width: 170px;
+  width: 200px;
   color: #000000;
   float: right;
   display: block;
@@ -831,7 +844,8 @@ LK_top_manager_name a:hover {
 
 .personal_cabinet_block .text {
   padding-left: 27px;
-  width: 145px;
+  max-width: 183px;
+  width: auto;
   position: relative;
   overflow: hidden;
   white-space: nowrap;
@@ -886,7 +900,7 @@ LK_top_manager_name a:hover {
   display: none;
   position: absolute;
   background-color: #ffcb98;
-  width: 170px;
+  width: 200px;
   z-index: 100;
   top: 28px;
   right: 0;
@@ -939,6 +953,16 @@ LK_top_manager_name a:hover {
   }
 }
 
+@media (max-width: 500px) {
+  .personal_cabinet_block,
+  .personal_cabinet_dropdown_block {
+    width: 170px;
+  }
+  .personal_cabinet_block .text {
+    width: 145px;
+  }
+}
+
 /*end personal cabinet*/
 
 /*header_top_block*/
@@ -961,6 +985,7 @@ LK_top_manager_name a:hover {
   min-height: 80px;
   z-index: 200;
   position: relative;
+  margin-bottom: -3px;
 }
 
 .header_top_block {
@@ -1133,7 +1158,7 @@ LK_top_manager_name a:hover {
   width: 27px;
   height: 27px;
   position: absolute;
-  right: 4px;
+  right: 12px;
   top: 4px;
 }
 
@@ -3507,7 +3532,6 @@ table.infotable td {
   width: 19px;
   vertical-align: top;
   position: relative;
-  top: 3px;
 }
 
 .filter_1 .btn_remove_filter_1:hover {
@@ -5337,7 +5361,7 @@ a.pagination_last:hover {
   background: url(../_i/icons/icon_close_3_hover.png) no-repeat;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 940px) {
   .custom-popup .popup_inner .close {
     right: -41px;
   }
@@ -9543,6 +9567,7 @@ input[type="reset"].btn_reset:hover {
 .login_popup_block input[type=text], .login_popup_block input[type=password] {
   width: 100%;
   border: 1px solid #cccccc;
+  max-width: none;
 }
 
 .login_popup_block input[type=password] {
@@ -10247,6 +10272,7 @@ input[type="reset"].btn_reset:hover {
   display: inline-block;
   width: 100%;
   max-width: 570px;
+  float: left;
 }
 
 .order_total_info_block .block_right {
@@ -10254,6 +10280,7 @@ input[type="reset"].btn_reset:hover {
   width: 100%;
   max-width: 550px;
   text-align: right;
+  float: right;
 }
 
 .row_order_total_info {
@@ -10735,6 +10762,7 @@ input[type=submit].btn_confirm_order:hover {
 .search_input_holder {
   background: #f8ede3;
   padding: 12px;
+  display: flex;
 }
 
 .search_input_holder input[type=text] {
@@ -10743,13 +10771,13 @@ input[type=submit].btn_confirm_order:hover {
   display: inline-block;
   vertical-align: top;
   background: #fff;
-  width: 1000px;
+  max-width: none;
   border: none;
+  flex: auto;
 }
 
 .search_input_holder input[type=submit] {
   height: 45px;
-  width: 45px;
   padding: 0;
   margin: 0;
   display: inline-block;
@@ -10761,6 +10789,7 @@ input[type=submit].btn_confirm_order:hover {
   text-align: center;
   text-transform: none;
   border-radius: 3px;
+  flex: none;
 }
 
 .search_input_holder input[type=submit]:hover {
@@ -10777,6 +10806,9 @@ input[type=submit].btn_confirm_order:hover {
 }
 
 @media (max-width: 620px) {
+  .search_input_holder  {
+    flex-wrap: wrap;
+  }
   .search_input_holder input[type=text],
   .search_input_holder input[type=submit] {
     width: 100%;
@@ -10930,6 +10962,7 @@ input[type=submit].btn_confirm_order:hover {
 
 .cart_headings {
   padding: 15px 0;
+  margin: 0 -16px
 }
 
 .cart_headings div {
@@ -13082,6 +13115,7 @@ input[type=submit].profile_btn_save {
   padding: 30px;
   position: relative;
   margin-bottom: 25px;
+  overflow: hidden;
 }
 
 .order_history_blocks .order_history_block .title {
@@ -13103,7 +13137,8 @@ input[type=submit].profile_btn_save {
 }
 
 .order_history_blocks .order_history_block .block {
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
   display: inline-block;
   margin-right: 30px;
   vertical-align: top;
@@ -13115,7 +13150,7 @@ input[type=submit].profile_btn_save {
 }
 
 .order_history_blocks .order_history_block .block.block_2 {
-  width: 420px;
+  max-width: 420px;
 }
 
 .order_history_blocks .order_history_block .block.block_3 {
@@ -13131,6 +13166,30 @@ input[type=submit].profile_btn_save {
   font-size: 25px;
   color: #000;
   margin-bottom: 23px;
+}
+
+@media (max-width: 800px) {
+  .order_history_blocks .order_history_block {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .order_history_blocks .order_history_block {
+    padding: 10px;
+    padding-top: 50px;
+  }
+  .order_history_blocks .order_history_block .block,
+  .order_history_blocks .order_history_block .block.block_2 {
+    margin-right: 0;
+    max-width: none;
+  }
+  .row_order_history_block .row_right .inner {
+    width: auto;
+  }
+  .row_order_history_block .row_right .inner .rub:after {
+    width: auto;
+  }
 }
 
 .btn_repeat_order {
@@ -20022,7 +20081,32 @@ h1.new_pd {
 }
 
 div.jspVerticalBar {
-  right: 16px;
+  right: 12px;
+}
+
+.mejs-container,
+.mejs-inner,
+.mejs-inner video,
+.mejs-overlay {
+  width: 100% !important;
+}
+
+@media (max-height: 520px) {
+  .mejs-container,
+  .mejs-inner,
+  .mejs-inner video,
+  .mejs-overlay {
+    height: 350px !important;
+  }
+}
+
+@media (max-height: 450px) {
+  .mejs-container,
+  .mejs-inner,
+  .mejs-inner video,
+  .mejs-overlay {
+    height: 300px !important;
+  }
 }
 
 @media (max-width: 1260px) {
