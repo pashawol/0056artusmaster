@@ -2698,7 +2698,7 @@ table.infotable {
   border-collapse: separate;
   line-height: normal;
   width: 100%;
-  min-width: 768px;
+  min-width: 740px;
   border-spacing: 0;
 }
 
@@ -18642,6 +18642,10 @@ related_products_block .btn_recently_view {
   padding-top: 18px;
 }
 
+.main_page_catalog_list:first-of-type {
+  padding-top: 26px;
+}
+
 .main_page_catalog_col {
   border-right: 1px solid #efefef;
   width: 310px;
@@ -18671,7 +18675,7 @@ related_products_block .btn_recently_view {
   width: 27px;
   height: 27px;
   position: absolute;
-  right: 4px;
+  right: 12px;
   top: 4px;
 }
 
