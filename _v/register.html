@@ -586,7 +586,7 @@
               <div class="registration_top_block">
                 <div class="registration_bordered_block">
                   <div class="registration_inner_block">
-                    <div class="block_left">
+                    <div class="registration_form form_main_data">
                       <div class="form_row">
                         <label>Фамилия:<span class="requaired_fields_star">*</span></label>
                         <div class="input"><input type="text" placeholder="Введите вашу фамилию"
@@ -594,30 +594,18 @@
                                                   data-validation="required"></div>
                       </div>
                       <div class="form_row">
-                        <label>Конт. телефон:<span class="requaired_fields_star">*</span></label>
-                        <div class="input"><input type="text" placeholder="+7 (___) ___-__-__" class="js_phone_mask"
-                                                  data-validation-error-msg="Это поле необходимо заполнить"
-                                                  data-validation="required"></div>
-
-                      </div>
-                      <div class="form_row">
-                        <label>Отрасль:<span class="requaired_fields_star">*</span></label>
-                        <div class="custom_select  js_select">
-                          <select data-validation="required">
-                            <option disabled>Выберите отрасль</option>
-                            <option>ООО «Книга»</option>
-                          </select>
-                        </div>
-                      </div>
-
-
-                    </div>
-
-
-                    <div class="block_middle">
-                      <div class="form_row">
                         <label>Имя:<span class="requaired_fields_star">*</span></label>
                         <div class="input"><input type="text" placeholder="Введите ваше имя"
+                                                  data-validation-error-msg="Это поле необходимо заполнить"
+                                                  data-validation="required"></div>
+                      </div>
+                      <div class="form_row">
+                        <label>Отчество:</label>
+                        <div class="input"><input type="text" placeholder="Введите ваше отчество"></div>
+                      </div>
+                      <div class="form_row">
+                        <label>Конт. телефон:<span class="requaired_fields_star">*</span></label>
+                        <div class="input"><input type="text" placeholder="+7 (___) ___-__-__" class="js_phone_mask"
                                                   data-validation-error-msg="Это поле необходимо заполнить"
                                                   data-validation="required"></div>
                       </div>
@@ -636,25 +624,6 @@
                           символы(!№;%:?*...)
                         </div>
                       </div>
-                    </div>
-
-
-                    <div class="block_right">
-
-
-                      <div class="form_row">
-                        <label>Отчество:<span class="requaired_fields_star">*</span></label>
-                        <div class="input"><input type="text" placeholder="Введите ваше отчество"
-                                                  data-validation-error-msg="Это поле необходимо заполнить"
-                                                  data-validation="required"></div>
-                      </div>
-
-                      <div class="form_row">
-                        <label>Доп. телефон:</label>
-                        <div class="input"><input type="text" placeholder="+7 (___) ___-__-__" class="js_phone_mask">
-                        </div>
-                      </div>
-
 
                       <div class="form_row">
                         <label>Подтверждение пароля:<span class="requaired_fields_star">*</span></label>
@@ -663,7 +632,6 @@
                                                   data-validation-confirm="regpass"></div>
                       </div>
                     </div>
-
 
                     <div class="represent_block">
 
@@ -725,7 +693,13 @@
                         <div class="title">Информация о компании</div>
                       </div>
                       <div class="registration_inner_block">
-                        <div class="block_left">
+                        <div class="registration_form">
+                          <div class="form_row">
+                            <label>ИНН:<span class="requaired_fields_star">*</span></label>
+                            <div class="input"><input type="text" placeholder="XXXXXXXXXX"
+                                                      data-validation-error-msg="Это поле необходимо заполнить"
+                                                      data-validation="required"></div>
+                          </div>
                           <div class="form_row">
                             <label>Форма собственности:<span class="requaired_fields_star">*</span></label>
                             <div class="custom_select  js_select">
@@ -737,31 +711,26 @@
                             </div>
                           </div>
                           <div class="form_row">
-                            <label>ОГРН:</label>
-                            <input type="text" placeholder="XXXXXXXXXX">
-                          </div>
-                          <div class="form_row">
-                            <label>Номер факса:</label>
-                            <div class="input"><input type="text" placeholder="+7 (___) ___-__-__"
-                                                      class="js_phone_mask"></div>
-                          </div>
-
-
-                        </div>
-
-                        <div class="block_middle">
-                          <div class="form_row">
                             <label>Наименование компании:<span class="requaired_fields_star">*</span></label>
                             <div class="input"><input type="text" placeholder="Введите наименование компании"
                                                       data-validation-error-msg="Это поле необходимо заполнить"
                                                       data-validation="required"></div>
                           </div>
-
                           <div class="form_row">
-                            <label>ИНН:<span class="requaired_fields_star">*</span></label>
+                            <label>ОГРН:</label>
+                            <input type="text" placeholder="XXXXXXXXXX">
+                          </div>
+                          <div class="form_row">
+                            <label>КПП:<span class="requaired_fields_star">*</span></label>
                             <div class="input"><input type="text" placeholder="XXXXXXXXXX"
                                                       data-validation-error-msg="Это поле необходимо заполнить"
                                                       data-validation="required"></div>
+                          </div>
+                          <div class="form_row">
+                            <label>Телефон организации:<span class="requaired_fields_star">*</span></label>
+                            <div class="input"><input type="text" placeholder="+7 (___) ___-__-__"
+                                                      data-validation-error-msg="Это поле необходимо заполнить"
+                                                      data-validation="required" class="js_phone_mask"></div>
                           </div>
                           <div class="form_row">
                             <label>E-mail организации:<span class="requaired_fields_star">*</span></label>
@@ -769,25 +738,6 @@
                                                       data-validation-error-msg="Это поле необходимо заполнить"
                                                       data-validation="required"></div>
                           </div>
-
-
-                        </div>
-
-                        <div class="block_right">
-                          <div class="form_row">
-                            <label>КПП:<span class="requaired_fields_star">*</span></label>
-                            <div class="input"><input type="text" placeholder="XXXXXXXXXX"
-                                                      data-validation-error-msg="Это поле необходимо заполнить"
-                                                      data-validation="required"></div>
-                          </div>
-
-                          <div class="form_row">
-                            <label>Телефон организации:<span class="requaired_fields_star">*</span></label>
-                            <div class="input"><input type="text" placeholder="+7 (___) ___-__-__"
-                                                      data-validation-error-msg="Это поле необходимо заполнить"
-                                                      data-validation="required" class="js_phone_mask"></div>
-                          </div>
-
                         </div>
                       </div>
                       <!--end block-->
@@ -804,29 +754,13 @@
                           <div class="title">Юридический адрес</div>
                         </div>
                         <div class="registration_inner_block">
-
-                          <div class="block_left">
+                          <div class="registration_form">
                             <div class="form_row">
                               <label>Индекс:<span class="requaired_fields_star">*</span></label>
                               <input type="text" class="js_legal_index_val js_index_mask" placeholder="__-__-__"
                                      data-validation-error-msg="Это поле необходимо заполнить"
                                      data-validation="required">
                             </div>
-                            <div class="form_row">
-                              <label>Улица:<span class="requaired_fields_star">*</span></label>
-                              <div class="custom_select  js_select js_legal_street">
-                                <select data-validation="required"
-                                        data-validation-error-msg="Это поле необходимо заполнить">
-                                  <option disabled>Выберите улицу</option>
-                                  <option>Улица 1</option>
-                                  <option>Улица 2</option>
-                                  <option>Улица 3</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="block_middle">
                             <div class="form_row">
                               <label>Регион:<span class="requaired_fields_star">*</span></label>
                               <div class="custom_select  js_select js_legal_region">
@@ -840,17 +774,6 @@
                               </div>
                             </div>
                             <div class="form_row">
-                              <label>Дом, корпус, офис:<span class="requaired_fields_star">*</span></label>
-                              <div class="input"><input type="text" class="js_legal_house_val"
-                                                        placeholder="XXX, XXX, XXX"
-                                                        data-validation-error-msg="Это поле необходимо заполнить"
-                                                        data-validation="required"></div>
-                            </div>
-                          </div>
-
-
-                          <div class="block_right">
-                            <div class="form_row">
                               <label>Населенный пункт:<span class="requaired_fields_star">*</span></label>
                               <div class="custom_select js_select js_legal_city">
                                 <select data-validation="required"
@@ -863,11 +786,29 @@
                               </div>
                             </div>
                             <div class="form_row">
+                              <label>Улица:<span class="requaired_fields_star">*</span></label>
+                              <div class="custom_select  js_select js_legal_street">
+                                <select data-validation="required"
+                                        data-validation-error-msg="Это поле необходимо заполнить">
+                                  <option disabled>Выберите улицу</option>
+                                  <option>Улица 1</option>
+                                  <option>Улица 2</option>
+                                  <option>Улица 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form_row">
+                              <label>Дом, корпус, офис:<span class="requaired_fields_star">*</span></label>
+                              <div class="input"><input type="text" class="js_legal_house_val"
+                                                        placeholder="XXX, XXX, XXX"
+                                                        data-validation-error-msg="Это поле необходимо заполнить"
+                                                        data-validation="required"></div>
+                            </div>
+                            <div class="form_row">
                               <label>Доп. информация:</label>
                               <div class="input"><input type="text" placeholder="" id="legal_additional"
                                                         class="js_legal_additional_val"></div>
                             </div>
-
                           </div>
                         </div>
                         <!--end legal_address-->
@@ -891,8 +832,7 @@
                           </label>
                         </div>
                         <div class="registration_inner_block">
-                          <div class="block_left">
-
+                          <div class="registration_form">
                             <div class="form_row">
                               <label>Индекс:<span class="requaired_fields_star">*</span></label>
                               <div class="input"><input type="text" class="js_actual_index_val js_index_mask"
@@ -900,23 +840,6 @@
                                                         data-validation-error-msg="Это поле необходимо заполнить"
                                                         data-validation="required"></div>
                             </div>
-
-                            <div class="form_row">
-                              <label>Улица:<span class="requaired_fields_star">*</span></label>
-                              <div class="custom_select  js_select js_actual_street">
-                                <select data-validation="required"
-                                        data-validation-error-msg="Это поле необходимо заполнить">
-                                  <option disabled>Выберите улицу</option>
-                                  <option>Улица 1</option>
-                                  <option>Улица 2</option>
-                                  <option>Улица 3</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-
-
-                          <div class="block_middle">
                             <div class="form_row">
                               <label>Регион:<span class="requaired_fields_star">*</span></label>
                               <div class="custom_select  js_select js_actual_region">
@@ -930,16 +853,6 @@
                               </div>
                             </div>
                             <div class="form_row">
-                              <label>Дом, корпус, офис:<span class="requaired_fields_star">*</span></label>
-                              <div class="input"><input type="text" class="js_actual_house_val"
-                                                        placeholder="XXX, XXX, XXX"
-                                                        data-validation-error-msg="Это поле необходимо заполнить"
-                                                        data-validation="required"></div>
-                            </div>
-                          </div>
-
-                          <div class="block_right">
-                            <div class="form_row">
                               <label>Населенный пункт::<span class="requaired_fields_star">*</span></label>
                               <div class="custom_select  js_select js_actual_city">
                                 <select data-validation="required"
@@ -951,15 +864,31 @@
                                 </select>
                               </div>
                             </div>
-
-
+                            <div class="form_row">
+                              <label>Улица:<span class="requaired_fields_star">*</span></label>
+                              <div class="custom_select  js_select js_actual_street">
+                                <select data-validation="required"
+                                        data-validation-error-msg="Это поле необходимо заполнить">
+                                  <option disabled>Выберите улицу</option>
+                                  <option>Улица 1</option>
+                                  <option>Улица 2</option>
+                                  <option>Улица 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form_row">
+                              <label>Дом, корпус, офис:<span class="requaired_fields_star">*</span></label>
+                              <div class="input"><input type="text" class="js_actual_house_val"
+                                                        placeholder="XXX, XXX, XXX"
+                                                        data-validation-error-msg="Это поле необходимо заполнить"
+                                                        data-validation="required"></div>
+                            </div>
                             <div class="form_row">
                               <label>Доп. информация:</label>
                               <div class="input"><input type="text" placeholder="" class="js_actual_additional_val">
                               </div>
                             </div>
                           </div>
-
                         </div>
                         <!--end actual_address-->
                       </div>
@@ -982,8 +911,7 @@
                           </label>
                         </div>
                         <div class="registration_inner_block">
-                          <div class="block_left">
-
+                          <div class="registration_form">
                             <div class="form_row">
                               <label>Индекс:<span class="requaired_fields_star">*</span></label>
                               <div class="input"><input type="text" class="js_delivery_index_val js_index_mask"
@@ -991,21 +919,6 @@
                                                         data-validation-error-msg="Это поле необходимо заполнить"
                                                         data-validation="required"></div>
                             </div>
-                            <div class="form_row">
-                              <label>Улица:<span class="requaired_fields_star">*</span></label>
-                              <div class="custom_select  js_select js_delivery_street">
-                                <select data-validation="required"
-                                        data-validation-error-msg="Это поле необходимо заполнить">
-                                  <option disabled>Выберите улицу</option>
-                                  <option>Улица 1</option>
-                                  <option>Улица 2</option>
-                                  <option>Улица 3</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="block_middle">
                             <div class="form_row">
                               <label>Регион:<span class="requaired_fields_star">*</span></label>
                               <div class="custom_select  js_select js_delivery_region">
@@ -1019,16 +932,6 @@
                               </div>
                             </div>
                             <div class="form_row">
-                              <label>Дом, корпус, офис:<span class="requaired_fields_star">*</span></label>
-                              <div class="input"><input type="text" class="js_delivery_house_val"
-                                                        placeholder="XXX, XXX, XXX"
-                                                        data-validation-error-msg="Это поле необходимо заполнить"
-                                                        data-validation="required"></div>
-                            </div>
-                          </div>
-
-                          <div class="block_right">
-                            <div class="form_row">
                               <label>Населенный пункт:<span class="requaired_fields_star">*</span></label>
                               <div class="custom_select  js_select js_delivery_city">
                                 <select data-validation="required"
@@ -1039,6 +942,25 @@
                                   <option>ООО «Книга 3»</option>
                                 </select>
                               </div>
+                            </div>
+                            <div class="form_row">
+                              <label>Улица:<span class="requaired_fields_star">*</span></label>
+                              <div class="custom_select  js_select js_delivery_street">
+                                <select data-validation="required"
+                                        data-validation-error-msg="Это поле необходимо заполнить">
+                                  <option disabled>Выберите улицу</option>
+                                  <option>Улица 1</option>
+                                  <option>Улица 2</option>
+                                  <option>Улица 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form_row">
+                              <label>Дом, корпус, офис:<span class="requaired_fields_star">*</span></label>
+                              <div class="input"><input type="text" class="js_delivery_house_val"
+                                                        placeholder="XXX, XXX, XXX"
+                                                        data-validation-error-msg="Это поле необходимо заполнить"
+                                                        data-validation="required"></div>
                             </div>
                             <div class="form_row">
                               <label>Доп. информация:</label>
@@ -1070,7 +992,7 @@
                           <div class="title">Фактический адрес</div>
                         </div>
                         <div class="registration_inner_block">
-                          <div class="block_left">
+                          <div class="registration_form">
                             <div class="form_row">
                               <label>Индекс:<span class="requaired_fields_star">*</span></label>
                               <div class="input"><input type="text" class="js_actual_index_val js_index_mask"
@@ -1079,22 +1001,6 @@
                                                         data-validation="required"></div>
 
                             </div>
-
-                            <div class="form_row">
-                              <label>Улица:<span class="requaired_fields_star">*</span></label>
-                              <div class="custom_select  js_select js_actual_street">
-                                <select data-validation="required"
-                                        data-validation-error-msg="Это поле необходимо заполнить">
-                                  <option disabled>Выберите улицу</option>
-                                  <option>Улица 1</option>
-                                  <option>Улица 2</option>
-                                  <option>Улица 3</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="block_middle">
                             <div class="form_row">
                               <label>Регион:<span class="requaired_fields_star">*</span></label>
                               <div class="custom_select  js_select js_actual_region">
@@ -1108,16 +1014,6 @@
                               </div>
                             </div>
                             <div class="form_row">
-                              <label>Дом, корпус, офис:<span class="requaired_fields_star">*</span></label>
-                              <div class="input"><input type="text" class="js_actual_house_val"
-                                                        placeholder="XXX, XXX, XXX"
-                                                        data-validation-error-msg="Это поле необходимо заполнить"
-                                                        data-validation="required"></div>
-                            </div>
-                          </div>
-
-                          <div class="block_right">
-                            <div class="form_row">
                               <label>Населенный пункт::<span class="requaired_fields_star">*</span></label>
                               <div class="custom_select  js_select js_actual_city">
                                 <select data-validation="required"
@@ -1130,12 +1026,30 @@
                               </div>
                             </div>
                             <div class="form_row">
+                              <label>Улица:<span class="requaired_fields_star">*</span></label>
+                              <div class="custom_select  js_select js_actual_street">
+                                <select data-validation="required"
+                                        data-validation-error-msg="Это поле необходимо заполнить">
+                                  <option disabled>Выберите улицу</option>
+                                  <option>Улица 1</option>
+                                  <option>Улица 2</option>
+                                  <option>Улица 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form_row">
+                              <label>Дом, корпус, офис:<span class="requaired_fields_star">*</span></label>
+                              <div class="input"><input type="text" class="js_actual_house_val"
+                                                        placeholder="XXX, XXX, XXX"
+                                                        data-validation-error-msg="Это поле необходимо заполнить"
+                                                        data-validation="required"></div>
+                            </div>
+                            <div class="form_row">
                               <label>Доп. информация:</label>
                               <div class="input"><input type="text" placeholder="" class="js_actual_additional_val">
                               </div>
                             </div>
                           </div>
-
                         </div>
                         <!--end actual_address-->
                       </div>
@@ -1155,6 +1069,9 @@
                                             data-validation-error-msg="Это поле необходимо заполнить"
                                             data-validation="required"></div>
                   <div class="captcha_pic"><img src="_i/temp/capcha.jpg" alt="" title=""></div>
+                  <div class="captcha_reset">
+                    <button>Сбросить капчу</button>
+                  </div>
                 </div>
               </div>
             </div>

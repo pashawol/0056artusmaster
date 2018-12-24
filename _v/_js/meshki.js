@@ -999,8 +999,10 @@ $(window).scroll(function () {
   var elem = $('.search_input_holder');
   if (elem && elem.offset()) {
     var top = elem.offset().top + elem.outerHeight() - $(document).scrollTop();
+    var header = $('.header_top_block').height() + 10;
+    if ($(window).width() <= 1050) header = $('.header_top_block .top_block').height() + 10;
     var height = $('.filter_menu_holder').height() + 35;
-    if (top < 28) {
+    if (top < header) {
       $('.filter_menu_holder').addClass('fixed');
       elem.css('margin-bottom', '' + height + 'px');
     }
