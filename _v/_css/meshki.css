@@ -18511,6 +18511,8 @@ related_products_block .btn_recently_view {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   padding: 10px 20px;
   right: 0;
+  width: calc(100vw - 32px);
+  max-width: 490px;
   z-index: 100;
   text-align: left;
   top: 50px;
@@ -18520,7 +18522,7 @@ related_products_block .btn_recently_view {
 .main_page_hidden_phones_block:before {
   position: absolute;
   top: -9px;
-  left: 360px;
+  right: 20%;
   width: 22px;
   height: 9px;
   background-image: url(../_i/icons/icon_triangle_phones_block.png);
@@ -18530,9 +18532,7 @@ related_products_block .btn_recently_view {
 }
 
 .main_page_phones_block_title {
-  width: 311px;
-  float: none;
-  display: inline-block;
+  flex: auto;
 }
 
 .main_page_phones_block_title .title {
@@ -18544,8 +18544,11 @@ related_products_block .btn_recently_view {
 }
 
 .main_page_phones_block {
-  width: 439px;
-  float: right;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
   line-height: normal;
   margin-bottom: 5px;
   border-bottom: 1px dashed #e4d3c2;
@@ -18566,7 +18569,6 @@ related_products_block .btn_recently_view {
 
 .main_page_phones_block_phone {
   width: 124px;
-  float: none;
   display: inline-block;
   text-align: right;
   font-size: 13px;
@@ -18578,6 +18580,26 @@ related_products_block .btn_recently_view {
   color: #341f12;
   text-decoration: none;
   font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .main_page_hidden_phones_block {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .main_page_hidden_phones_block:before {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media (max-width: 400px) {
+  .main_page_phones_block_title,
+  .main_page_phones_block_phone {
+    flex: none;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .link_city_block {
