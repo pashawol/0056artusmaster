@@ -2196,7 +2196,7 @@ textarea {
   max-width: 165px;
   margin-right: 15px;
 }
-
+.btn-primary,
 .captcha_block .captcha_reset button {
   background: #ffa766;
   color: #231f20;
@@ -20628,3 +20628,23 @@ div.jspVerticalBar {
     font-size: 24px;
   }
 }
+
+.js_modal_price_shiping{
+  padding: 60px 30px;
+  position: relative;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.js_modal_price_shiping  .btn-primary{
+  cursor: pointer;
+      margin-top: 20px;
+    }
+    .js_modal_price_shiping  label{
+            margin-top: 20px;
+          }
+      .js_modal_price_shiping .close{
+        right: -20px !important;
+        top: -50px !important;
+        background-color: #ffa766 !important;
+      }
