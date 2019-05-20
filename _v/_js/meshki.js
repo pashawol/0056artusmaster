@@ -1494,9 +1494,9 @@ $(document).ready(function () {
       $('.js_form_legal_block').css('display', 'none').find('select, textarea, input').attr('disabled', 'disabled').trigger('refresh');
       $('.js_form_entrepreneur_block').css('display', 'block').find('select, textarea, input').removeAttr('disabled').trigger('refresh');
 
-      if (!$('.js_form_entrepreneur_block').find('.js_fill_delivery_address').prop('checked')) {
-        $('.js_form_entrepreneur_block').find('.register_delivery_block').find('select, textarea, input').attr('disabled', 'disabled');
-      }
+      // if (!$('.js_form_entrepreneur_block').find('.js_fill_delivery_address').prop('checked')) {
+      //   $('.js_form_entrepreneur_block').find('.register_delivery_block').find('select, textarea, input').attr('disabled', 'disabled');
+      // }
 
       $('.js_form_legal_block input, .js_form_legal_block select, .js_form_entrepreneur_block input, .js_form_entrepreneur_block select, .js_form_individ_block input, .js_form_individ_block select').each(function () {
         if ($(this).attr('disabled')) {
